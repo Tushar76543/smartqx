@@ -1,0 +1,29 @@
+
+> smartq-frontend@0.0.0 dev
+> vite --host 127.0.0.1 --strictPort --port 5173
+
+
+  [32m[1mVITE[22m v4.5.14[39m  [2mready in [0m[1m862[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://127.0.0.1:[1m5173[22m/[39m
+[2m[32m  ➜[39m[22m[2m  press [22m[1mh[22m[2m to show help[22m
+(node:27444) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[2m3:35:20 am[22m [31m[1m[vite][22m[39m [31mhttp proxy error at /join-queue?name=PortTest&email=porttest%40smartqx.demo&role=general:[39m
+Error: connect ECONNREFUSED ::1:8000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1615:16)
+[2m3:35:20 am[22m [31m[1m[vite][22m[39m [31mhttp proxy error at /position?email=porttest%40smartqx.demo:[39m
+Error: connect ECONNREFUSED ::1:8000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1615:16)
+[2m3:35:50 am[22m [31m[1m[vite][22m[39m [31mhttp proxy error at /join-queue?name=ProxyDebug&email=proxydebug%40smartqx.demo&role=general:[39m
+Error: connect ECONNREFUSED ::1:8000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1615:16)
+[2m3:36:02 am[22m [36m[1m[vite][22m[39m [32mvite.config.js changed, restarting server...[39m
+[2m3:36:03 am[22m [36m[1m[vite][22m[39m server restarted.
+[2m3:40:05 am[22m [31m[1m[vite][22m[39m [31mhttp proxy error at /join-queue?name=tushar&email=tusharranjansahoo569%40gmail.com&role=general:[39m
+Error: connect ECONNREFUSED 127.0.0.1:8000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1615:16)
+[2m3:41:40 am[22m [31m[1m[vite][22m[39m [31mhttp proxy error at /join-queue?name=tushar&email=tusharranjansahoo569%40gmail.com&role=general:[39m
+Error: connect ECONNREFUSED 127.0.0.1:8000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1615:16)
+^C

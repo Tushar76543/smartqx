@@ -1,0 +1,10 @@
+fastapi[all]
+sqlmodel
+psycopg2-binary
+redis
+python-multipart
+uvicorn
+python-dotenv
+PyJWT
+websockets
+bcrypt
