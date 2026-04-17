@@ -7,7 +7,7 @@ import datetime
 import os
 from typing import Optional
 
-import bcrypt
+from passlib.context import CryptContext
 import jwt
 from fastapi import Depends, HTTPException, Header
 from pydantic import BaseModel
@@ -41,13 +41,15 @@ class AuthResponse(BaseModel):
 
 # ── Password helpers ──
 
+pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
+
 def hash_password(plain: str) -> str:
-    return bcrypt.hashpw(plain.encode(), bcrypt.gensalt()).decode()
+    return pwd_context.hash(plain)
 
 
 def verify_password(plain: str, hashed: str) -> bool:
     try:
-        return bcrypt.checkpw(plain.encode(), hashed.encode())
+        return pwd_context.verify(plain, hashed)
     except Exception:
         return False
 
